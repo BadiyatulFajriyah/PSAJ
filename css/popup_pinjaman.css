@@ -1,0 +1,129 @@
+/* Overlay untuk modal */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Style modal popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Header Modal */
+.popup h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Label */
+.popup label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Input dan Select */
+.popup input, .popup select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Tombol */
+.popup button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Tombol utama (Tambah/Kurangi) */
+.popup button[type="submit"] {
+    background: #0BA16F;
+    color: white;
+}
+.popup button[type="submit"]:hover {
+    background:rgb(46, 124, 97);
+    color: #BEC6A0;
+}
+
+
+/* Tombol batal */
+.popup .close-btn {
+    background-color: #D84040; /* Warna merah yang lebih elegan */
+    color: white;
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Efek hover pada tombol batal */
+.popup .close-btn:hover {
+    background-color: rgb(145, 83, 70); /* Warna merah lebih gelap saat hover */
+    color: #BEC6A0;
+}
+/* Efek transisi saat modal muncul */
+.popup.active, .overlay.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .popup {
+        width: 95%;
+        max-width: 350px;
+        padding: 15px;
+    }
+}
+
+.header-container {
+    background-color: rgb(207, 151, 140);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}

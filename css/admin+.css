@@ -1,0 +1,59 @@
+.header-container {
+    background-color: rgb(207, 151, 140);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}
+.btn-tambah-admin{
+    background-color: #618B7D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 380px;
+}
+.btn-tambah-admin:hover{
+    background:rgb(127, 170, 156);
+    color: rgb(178, 211, 201);
+}
+
+td a {
+    display: inline-flex;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    padding: 5px; /* Memberikan ruang klik lebih besar */
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 5px; /* Mengurangi jarak dari tabel */
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #618B7D;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #4e7568;
+}
+
+.pagination a.active {
+    background-color: #375248;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+.pagination {
+    text-align: center;
+    margin-top: 5px; /* Mengurangi jarak dari tabel */
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #618B7D;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #4e7568;
+}
+
+.pagination a.active {
+    background-color: #375248;
+    color: #fff;
+}

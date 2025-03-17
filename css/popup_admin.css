@@ -1,0 +1,92 @@
+/* style_popup.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Popup Modal Style */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Lebar lebih besar */
+    background: white;
+    padding: 30px; /* Padding lebih besar agar tampak lebih lega */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.close-btn i {
+    color: inherit;
+}
+
+.close-btn:hover i {
+    color: gray;
+}
+
+/* Heading Style */
+.popup h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Jarak ke bawah agar lebih rapi */
+}
+
+/* Input Style for Popups */
+.popup input[type="text"],
+.popup input[type="number"],
+.popup select {
+    width: 100%; /* Membuat input selebar pop-up */
+    padding: 10px; /* Memberikan ruang lebih agar nyaman diketik */
+    margin-bottom: 10px; /* Jarak antar elemen */
+    border: 1px solid #ccc; /* Memberikan border */
+    border-radius: 5px; /* Membuat sudut lebih halus */
+    box-sizing: border-box; /* Mencegah input melebar lebih dari container */
+}
+
+/* Style for Submit Button */
+.popup button[type="submit"] {
+    width: 60%; /* Lebar tombol 60% dari parent */
+    padding: 12px; /* Memberikan ruang agar nyaman diklik */
+    margin: 10px auto; /* Auto untuk pusatkan tombol secara horizontal */
+    display: block; /* Agar tombol bisa diatur marginnya */
+    border: none;
+    border-radius: 5px; /* Membuat sudut lebih halus */
+    font-size: 16px; /* Ukuran font lebih besar */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center; /* Pastikan teks tetap di tengah */
+}
+
+/* Button for Submit Action */
+.popup button[type="submit"] {
+    background: #0BA16F; /* Hijau untuk tombol simpan */
+    color: white;
+}
+
+.popup button[type="submit"]:hover {
+    background: rgb(54, 122, 100); /* Warna lebih gelap saat hover */
+}
+
+
+
+

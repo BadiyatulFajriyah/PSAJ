@@ -1,0 +1,42 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara input dan tombol */
+}
+
+.search-box {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #618B7D;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box:focus {
+    border-color: #4A7A6F;
+    box-shadow: 0 0 5px rgba(74, 122, 111, 0.5);
+}
+
+.btn-search {
+    background-color: #618B7D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-search i {
+    margin-right: 5px; /* Jarak ikon dengan teks */
+}
+
+.btn-search:hover {
+    background: rgb(127, 170, 156);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}

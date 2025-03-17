@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background-color: #5F7D6D;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.logout {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #375248;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logout:hover {
+    background-color: #2A3E38;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.info-s {
+    background-color: #F4B8B8;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Savings & Loan Box */
+.savings-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.savings-box {
+    background-color: #5F7D6D;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.savings-box i {
+    font-size: 30px;
+}
+
+.sisa-p {
+    background-color: #F4B8B8;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.savings-box:hover, .sisa-p:hover {
+    transform: scale(1.05);
+    background-color: #4D6D5A;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sisa-p:hover {
+    background-color: #E69B9B;
+}
+
+.sisa-p i {
+    font-size: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logout {
+        margin-top: 10px;
+    }
+
+    .savings-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .savings-box {
+        width: 90%;
+    }
+
+    .sisa-p {
+        width: 90%;
+    }
+}

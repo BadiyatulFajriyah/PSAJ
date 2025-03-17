@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+.same{
+    display: flex;
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: #618B7D;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    display: inline-block; /* Agar tampak seperti tombol */
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #557268; /* Warna tombol saat hover atau aktif */
+    color: white;
+    border-radius: 8px; /* Membuat tombol lebih membulat */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk efek tombol */
+    padding: 10px 20px; /* Lebih besar agar tampak tombol */
+}
+
+.navbar .logout {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+  
+.menu li a:hover {
+    color: red;
+    text-decoration: none;
+}  
+
+.container {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    width: 500px; /* Lebih panjang */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #BBCCC0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Agar lebih dekat */
+}
+
+.btn-tambah {
+    background:rgb(214, 122, 122);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-tambah:hover {
+    background:rgb(216, 149, 149);
+    color: rgb(178, 211, 201);
+}
+
+.table-container {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #375248;
+    color: white;
+}
+
+
+/* Tombol Umum */
+.edit, .delete {
+    display: inline-block; /* Agar tampak seperti tombol */
+    align-items: center;  /* Menengahkan secara vertikal */
+    justify-content: center;  /* Menengahkan secara horizontal */
+    font-size: 14px; /* Perbesar agar teks lebih jelas */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 4px 8px; /* Kurangi padding agar lebih kecil */
+    text-align: center;
+    font-weight: bold;
+    min-width: 60px; /* Lebar minimum tombol */
+    height: auto; /* Biarkan tinggi menyesuaikan isi */
+    transition: 0.3s ease-in-out;
+}
+
+/* Tombol Edit */
+.edit {
+    background-color: #0BA16F;
+    color: white;
+    border: 2px solid rgb(54, 122, 100);
+    padding: 8px 10px;
+}
+
+.edit:hover {
+    background-color:rgb(173, 228, 210);
+    color: rgb(54, 122, 100);
+}
+
+/* Tombol Hapus */
+.delete {
+    background-color: #B6786C;
+    color: white;
+    border: 2px solid rgb(145, 83, 70);
+    padding: 8px 10px;
+}
+
+.delete:hover {
+    background-color:rgb(226, 193, 187);
+    color: #d9534f;
+}
+
